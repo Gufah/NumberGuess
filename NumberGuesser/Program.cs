@@ -33,8 +33,7 @@ namespace NumberGuesser
                         Console.ResetColor();
                         continue;
                     }
-                    guess = Int32.Parse(input);
-
+                    
                     // make sure the number is not greater than 
                     if (guess > 9)
                     {
@@ -62,7 +61,7 @@ namespace NumberGuesser
                 Console.WriteLine("Press \"Y\" to play again or \"N\" to end game");
                 String input1 = Console.ReadLine().ToUpper();
 
-                if (input1 == "Y")
+                if (input1 == "Y" || input1 != "N")
                 {
                     continue;
                 }
